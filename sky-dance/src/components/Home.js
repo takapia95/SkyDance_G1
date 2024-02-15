@@ -5,7 +5,7 @@ function Home() {
  return (
     <div>
 
-        <Link to="/photos">Look up in the sky, it's a bird, it's a plane</Link>
+        <Link to="/photos"> Look up in the sky, it's a bird, it's a plane</Link>
     </div>
  );
 
