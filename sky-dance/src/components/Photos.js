@@ -44,8 +44,8 @@ export default function Photos() {
     return (
         <>
         <NavBar />
-        <div>
-        <DatePicker
+        <div class = "App">
+        <DatePicker 
             selected={selectedDate}
             onChange={handleDateChange}
             dateFormat="yyyy-MM-dd"
