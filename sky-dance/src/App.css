@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(45deg, #FFD700, #0074D9);
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -23,6 +23,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 
 .App-link {
   color: #61dafb;
@@ -35,4 +36,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+.custom-datepicker {
+  font-size: 18px; /* Adjust the font size to your preference */
+  background-image: linear-gradient(to right, #FFD700, #0074D9); /* Gradient from #FFD700 to #0074D9 */
+  color: white; /* Text color */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  padding: 8px 12px; /* Add padding for better appearance */
 }

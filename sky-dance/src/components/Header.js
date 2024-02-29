@@ -1,28 +1,52 @@
-import React from 'react'
+import React from 'react';
 import logo from './media/logo.png';
 
 const Header = () => {
-  return (
-        <nav class = "navbar navbar-expand-lg bg-body-tertiary nav-fill">
-        <div class = "container-fluid App-header">
-            <a className = "navbar-brand">
-                <img src={logo} height = {50} width = {50} alt="logo"/>
-            </a>
+    return (
+        <nav className="navbar bg-body-tertiary nav-fill">
+            <div className="container-fluid App-header">
+                <a className="navbar-brand">
+                    <img src={logo} height={200} width={200} alt="logo" />
+                </a>
 
-            <div class = "collapse navbar-collapse btn-3 " id = "navbarNav">
-            <ul class = "navbar-nav">
-                <li class = "nav-item">
-                    <a class = "nav-link active fw-bold" href = "https://github.com/takapia95/SkyDance_G1.git">Github</a>
-                </li>
-                <li class = "nav-item">
-                    <a class = "nav-link active fw-bold" href = "https://api.nasa.gov/">NASA APIs</a>
-                </li>
-            </ul>
-            <h1>SKY DANCE</h1>
+                {/* Toggle button for collapsed navbar (visible on small screens) */}
+                <button className="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav mx-auto">
+                        <li className="nav-item">
+                            <button className="nav-link active fw-bold btn text-light" onClick={() => window.location.href = "https://github.com/takapia95/SkyDance_G1.git"}>
+                                Github
+                            </button>
+                        </li>
+                        <li className="nav-item">
+                            <button className="nav-link active fw-bold btn text-light" onClick={() => window.location.href = "https://api.nasa.gov/"}>
+                                NASA-APIs
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                {/* Buttons outside of collapsed navbar (visible on larger screens) */}
+                <div className="d-none d-lg-block"> {/* Hide on small screens */}
+                    <ul className="navbar-nav mx-auto">
+                        <li className="nav-item">
+                            <button className="nav-link active fw-bold btn text-light" onClick={() => window.location.href = "https://github.com/takapia95/SkyDance_G1.git"}>
+                                Github
+                            </button>
+                        </li>
+                        <li className="nav-item">
+                            <button className="nav-link active fw-bold btn text-light" onClick={() => window.location.href = "https://api.nasa.gov/"}>
+                                NASA-APIs
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
         </nav>
-  )
+    );
 }
 
 export default Header;

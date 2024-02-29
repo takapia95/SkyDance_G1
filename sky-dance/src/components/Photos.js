@@ -46,12 +46,14 @@ export default function Photos() {
         <NavBar />
         <div class = "App">
         <DatePicker 
-            selected={selectedDate}
-            onChange={handleDateChange}
-            dateFormat="yyyy-MM-dd"
-            showPreviousMonths={true} // Enable navigation to previous month
-            numberOfMonths={1} // Show one month at a time
-        />
+    selected={selectedDate}
+    onChange={handleDateChange}
+    dateFormat="yyyy-MM-dd"
+    showPreviousMonths={true} // Enable navigation to previous month
+    numberOfMonths={1} // Show one month at a time
+    className="custom-datepicker" // Add a custom class for styling
+/>
+
             <div>
             {photoData.media_type === "image" ? (
                 <img
