@@ -15,7 +15,7 @@ const Header = () => {
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav mx-auto">
+                    <ul className="nav">
                         <li className="nav-item">
                             <button className="nav-link active fw-bold btn text-light" onClick={() => window.location.href = "https://github.com/takapia95/SkyDance_G1.git"}>
                                 Github
@@ -31,7 +31,12 @@ const Header = () => {
 
                 {/* Buttons outside of collapsed navbar (visible on larger screens) */}
                 <div className="d-none d-lg-block"> {/* Hide on small screens */}
-                    <ul className="navbar-nav mx-auto">
+                    <ul className="nav">
+                    <li className="nav-item">
+                            <button className="nav-link active fw-bold btn text-light" onClick={() => window.location.href = ""}>
+                                Home
+                            </button>
+                        </li>
                         <li className="nav-item">
                             <button className="nav-link active fw-bold btn text-light" onClick={() => window.location.href = "https://github.com/takapia95/SkyDance_G1.git"}>
                                 Github
@@ -40,6 +45,11 @@ const Header = () => {
                         <li className="nav-item">
                             <button className="nav-link active fw-bold btn text-light" onClick={() => window.location.href = "https://api.nasa.gov/"}>
                                 NASA-APIs
+                            </button>
+                        </li>
+                        <li className="nav-item">
+                            <button className="nav-link active fw-bold btn text-light" onClick={() => window.location.href = ""}>
+                                About Us
                             </button>
                         </li>
                     </ul>

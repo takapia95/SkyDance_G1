@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from "./components/Home.js";
-import Photos from "./components/Photos";
+import Photos from "./components/Photo.js";
 import NavBar from "./components/NavBar";
 import Header from './components/Header'
 import './App.css'; 
@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
         <Routes>
           <Route index element={<Home/>} />
-          <Route path="/photos" element={<Photos/>} />
+          
           <Route path="/nav" element={<NavBar/>} />
         </Routes>
     </BrowserRouter>

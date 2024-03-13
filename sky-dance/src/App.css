@@ -44,3 +44,12 @@
   border-radius: 5px; /* Add border-radius for rounded corners */
   padding: 8px 12px; /* Add padding for better appearance */
 }
+.nav {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 10px; /* Adjust as needed for spacing between buttons */
+}
