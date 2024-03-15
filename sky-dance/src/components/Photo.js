@@ -19,7 +19,7 @@ export default function Photos() {
             const res = await fetch(`https://api.nasa.gov/planetary/apod?api_key=H5g86kW7KlmRQnshr5zGkqUYi2OorIZmi4KL2s5d&date=${formattedDate}`);
 
             if (!res.ok) {
-                throw new Error('Failed to fetch data from the NASA API');
+                throw new Error('Failed to fetch data from the NASA API. Please choose a date already captured.');
             }
             const data = await res.json();
             setPhotoData(data);
