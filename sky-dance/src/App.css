@@ -40,7 +40,7 @@
 .custom-datepicker {
   font-size: 18px; /* Adjust the font size to your preference */
   background-image: linear-gradient(to right, #FFD700, #0074D9); /* Gradient from #FFD700 to #0074D9 */
-  color: white; /* Text color */
+  color: black; /* Text color */
   border-radius: 5px; /* Add border-radius for rounded corners */
   padding: 8px 12px; /* Add padding for better appearance */
 }

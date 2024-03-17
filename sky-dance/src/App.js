@@ -1,23 +1,27 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from "./components/Home.js";
+import Mars from "./components/Mars";
 import Photos from "./components/Photos";
-import NavBar from "./components/NavBar";
-import Header from './components/Header'
+import Header from './components/Header';
+import AboutUs from './components/AboutUs';
 import './App.css'; 
 
 function App() {
   return (
-    <div>
-    <Header/>
+    <>
     <BrowserRouter>
+      <div>
+        <Header />
         <Routes>
-          <Route index element={<Home/>} />
+          <Route path="/" element={<Home/>} />
           <Route path="/photos" element={<Photos/>} />
-          <Route path="/nav" element={<NavBar/>} />
+          <Route path="/mars" element={<Mars/>} />
+          <Route path="/about-us" element={<AboutUs/>} />
         </Routes>
+      </div>
     </BrowserRouter>
-    </div>
+    </>
   );
 }
 

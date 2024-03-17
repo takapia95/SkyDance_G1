@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 function Home() {
     return (
         <div style={{ position: 'relative' }}>
@@ -22,6 +21,25 @@ function Home() {
                     transition: 'background-color 0.3s ease',
                 }}>
                     Look up in the sky, it's a bird, it's a plane
+                </Link>
+            </div>
+            <div style={{ position: 'absolute', top: '15%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: '1', textAlign: 'center' }}>
+                <Link to="/mars" style={{ 
+                    display: 'inline-block',
+                    padding: '10px 50px',
+                    backgroundColor: 'transparent', /* Change to transparent */
+                    color: 'white',
+                    textDecoration: 'none',
+                    borderRadius: '5px',
+                    fontSize: '18px',
+                    fontWeight: 'bold',
+                    textTransform: 'uppercase',
+                    border: '2px solid white', /* Add border */
+                    cursor: 'pointer',
+                    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
+                    transition: 'background-color 0.3s ease',
+                }}>
+                    Look up in the sky! It's the planet Mars! 
                 </Link>
             </div>
         </div>
