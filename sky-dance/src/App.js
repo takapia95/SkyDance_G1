@@ -1,10 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from "./components/Home.js";
-import Mars from "./components/Mars";
 import Photos from "./components/Photos";
-import Header from './components/Header';
-import AboutUs from './components/AboutUs';
+import NavBar from "./components/NavBar";
+import Header from './components/Header'
 import './App.css'; 
 
 function App() {
@@ -14,10 +13,9 @@ function App() {
       <div>
         <Header />
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route index element={<Home/>} />
           <Route path="/photos" element={<Photos/>} />
-          <Route path="/mars" element={<Mars/>} />
-          <Route path="/about-us" element={<AboutUs/>} />
+          <Route path="/nav" element={<NavBar/>} />
         </Routes>
       </div>
     </BrowserRouter>

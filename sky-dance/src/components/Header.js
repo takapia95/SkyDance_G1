@@ -33,12 +33,7 @@ const Header = () => {
 
                 {/* Buttons outside of collapsed navbar (visible on larger screens) */}
                 <div className="d-none d-lg-block"> {/* Hide on small screens */}
-                    <ul className="nav">
-                        <li className="nav-item">
-                        <Link to="/" className="nav-link active fw-bold btn text-light">
-                                Home
-                        </Link>
-                        </li>
+                    <ul className="navbar-nav mx-auto">
                         <li className="nav-item">
                             <button className="nav-link active fw-bold btn text-light" onClick={() => window.location.href = "https://github.com/takapia95/SkyDance_G1.git"}>
                                 Github
@@ -48,11 +43,6 @@ const Header = () => {
                             <button className="nav-link active fw-bold btn text-light" onClick={() => window.location.href = "https://api.nasa.gov/"}>
                                 NASA-APIs
                             </button>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/about-us" className="nav-link active fw-bold btn text-light">
-                                About Us
-                            </Link>
                         </li>
                     </ul>
                 </div>
