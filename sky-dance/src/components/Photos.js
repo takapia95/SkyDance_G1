@@ -58,18 +58,18 @@ export default function Photos() {
             <div className="photo-container">
     {photoData.media_type === "image" ? (
         <div className="photo-box">
-            <img
-                src={photoData.hdurl} 
-                alt={photoData.title}
-                className="photo"
-            />
+        <img
+            src={photoData.hdurl}
+            alt={photoData.title}
+            className="photo"
+        />
+
         </div>
     ) : ( 
         <div className="photo-box">
             <iframe
                 title="space-video"
                 src={photoData.hdurl}
-                frameBorder="0"
                 gesture="media"
                 allow="encrypted-media"
                 allowFullScreen
@@ -80,7 +80,10 @@ export default function Photos() {
 </div>
 
             <h5>{photoData.date}</h5>
-            <p>{photoData.explanation}</p>
+            <div className="p-container">
+             <p>{photoData.explanation}</p>
+            </div>
+
         </div>
         </>
     );

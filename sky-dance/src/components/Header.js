@@ -8,7 +8,7 @@ const Header = () => {
         <nav className="navbar bg-body-tertiary nav-fill">
             <div className="container-fluid App-header">
                 <a className="navbar-brand">
-                    <img src={logo} height={200} width={200} alt="logo" />
+                    <img src={logo} height={150} alt="logo" />
                 </a>
 
                 {/* Toggle button for collapsed navbar (visible on small screens) */}
@@ -17,18 +17,31 @@ const Header = () => {
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="nav">
-                        <li className="nav-item">
-                            <button className="nav-link active fw-bold btn text-light" onClick={() => window.location.href = "https://github.com/takapia95/SkyDance_G1.git"}>
-                                Github
-                            </button>
-                        </li>
-                        <li className="nav-item">
-                            <button className="nav-link active fw-bold btn text-light" onClick={() => window.location.href = "https://api.nasa.gov/"}>
-                                NASA-APIs
-                            </button>
-                        </li>
-                    </ul>
+                <ul className="nav">
+
+                <li className="nav-item">
+                    <Link to="/" className="nav-link active fw-bold btn text-light">
+                            Home
+                    </Link>
+                    </li>
+                    <li className="nav-item">
+                        <button className="nav-link active fw-bold btn text-light" onClick={() => window.location.href = "https://github.com/takapia95/SkyDance_G1.git"}>
+                            Github
+                        </button>
+                    </li>
+                    <li className="nav-item">
+                        <button className="nav-link active fw-bold btn text-light" onClick={() => window.location.href = "https://api.nasa.gov/"}>
+                            NASA-APIs
+                        </button>
+                    </li>
+                    <li className="nav-item">
+
+                        <Link to="/about-us" className="nav-link active fw-bold btn text-light">
+                            About Us
+                        </Link>
+
+                    </li>
+                </ul>
                 </div>
 
                 {/* Buttons outside of collapsed navbar (visible on larger screens) */}
